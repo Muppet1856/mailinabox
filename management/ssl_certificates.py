@@ -353,7 +353,7 @@ def provision_certificates(env, limit_domains):
 						"--cert-path", os.path.join(d, 'cert'), # we only use the full chain
 						"--chain-path", os.path.join(d, 'chain'), # we only use the full chain
 						"--fullchain-path", cert_file,
-
+						"--must-staple",
 						"--webroot", "--webroot-path", webroot,
 
 						"--config-dir", account_path,
